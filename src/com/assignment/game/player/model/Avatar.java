@@ -1,4 +1,4 @@
-package com.assignment.game.player.character;
+package com.assignment.game.player.model;
 
 import java.io.Serializable;
 import java.util.List;

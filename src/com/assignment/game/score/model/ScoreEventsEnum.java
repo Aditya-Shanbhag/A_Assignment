@@ -1,7 +1,7 @@
-package com.assignment.game.player.score.model;
+package com.assignment.game.score.model;
 
 public enum ScoreEventsEnum {
-	exploreItem (20),
+	discoverValuable (20),
 	winFight (50);
 	
 	private int points;

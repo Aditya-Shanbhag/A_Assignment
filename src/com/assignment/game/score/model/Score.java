@@ -1,4 +1,4 @@
-package com.assignment.game.player.score.model;
+package com.assignment.game.score.model;
 
 import java.io.Serializable;
 

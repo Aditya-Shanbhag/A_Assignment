@@ -2,14 +2,15 @@ package com.assignment.game.player.model;
 
 import java.io.Serializable;
 
-import com.assignment.game.player.score.model.Score;
+import com.assignment.game.score.model.Score;
 
 public class Player implements Serializable{
 	private static final long serialVersionUID = 1L;
-	
+
 	private Character character;
 	private Score score;
-	
+	private int health;
+
 	public Character getCharacter() {
 		return character;
 	}
@@ -24,5 +25,11 @@ public class Player implements Serializable{
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	public int getHealth() {
+		return health;
+	}
+	public void setHealth(int health) {
+		this.health = health;
 	}
 }
