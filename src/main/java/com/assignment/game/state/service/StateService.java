@@ -61,6 +61,11 @@ public class StateService {
 		return state;
 	}
 
+	//	public boolean isSavedGameAvailable() {
+	//		String filename = GameConstants.savedGameDir + "Save1";
+	//		return new File(filename).exists();
+	//	}
+
 	/**
 	 * Initializes and returns a game state.
 	 * 

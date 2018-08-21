@@ -1,15 +1,14 @@
-package com.assignment.game.obstacle.model;
+package com.assignment.game.gameplay.model.obstacle;
 
 import java.util.Random;
 
 import com.assignment.game.player.model.Player;
 
-public class Level2Demon implements Obstacle, FightCapableObstacle{
+public class Level2Fighter implements Obstacle, FightCapableObstacle{
 	private static final int LEVEL_2_WARRIOR_HEALTH = 20;
 	
 	@Override
 	public boolean fight(Player player) {
-		System.out.println("Battle with Level 2 Demon...");
 		try {
 			Thread.sleep(3l);
 		} catch (InterruptedException e) {

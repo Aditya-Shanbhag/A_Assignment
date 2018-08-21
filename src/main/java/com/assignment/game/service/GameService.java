@@ -46,6 +46,8 @@ public class GameService {
 		if(gameState == null){
 			gameState = stateService.initializeNewState();
 		}
+		
+		
 	}
 
 	public void stop(){

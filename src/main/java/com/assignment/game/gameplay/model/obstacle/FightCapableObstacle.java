@@ -1,4 +1,4 @@
-package com.assignment.game.obstacle.model;
+package com.assignment.game.gameplay.model.obstacle;
 
 import com.assignment.game.player.model.Player;
 
