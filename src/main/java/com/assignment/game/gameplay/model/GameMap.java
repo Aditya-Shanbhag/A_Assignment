@@ -1,5 +1,6 @@
 package com.assignment.game.gameplay.model;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
@@ -9,11 +10,18 @@ import java.util.stream.IntStream;
  *
  * {@link GameMap} Class defining game canvas area and keeping track of all visited areas in map.
  */
-public final class GameMap {
+public final class GameMap implements Serializable{
+	private static final long serialVersionUID = 1L;
+	private static transient int defaultSize = 10;
+	
 	private int width;
 	private int height;
 
 	private boolean[][] canvas;
+	
+	public GameMap() {
+		this(defaultSize,defaultSize);
+	}
 
 	public GameMap(int width, int height) {
 		this.width = width;
@@ -36,6 +44,10 @@ public final class GameMap {
 	public void setVisited(int x, int y){
 		canvas[x][y] = true;
 	}
+	
+	public boolean getLocation(int x, int y){
+		return canvas[x][y];
+	}
 
 	public void drawGameMap(){
 		/**
@@ -51,8 +63,7 @@ public final class GameMap {
 		}
 
 		this.drawHorizontalBorder();
-		System.out.println();
-		System.out.println("X - Visited Co-Orinate");
+		System.out.println("\nX - Visited Co-Orinate");
 	}
 
 	/**

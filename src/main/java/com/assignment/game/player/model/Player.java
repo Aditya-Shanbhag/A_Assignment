@@ -2,22 +2,12 @@ package com.assignment.game.player.model;
 
 import java.io.Serializable;
 
-import com.assignment.game.score.model.Score;
-
 public class Player implements Serializable {
 	private static final long serialVersionUID = 1L;
+	public static final int MAX_HEALTH = 100;
 
 	private Avatar Avatar;
-	private Score score;
 	private int health;
-
-	public Score getScore() {
-		return score;
-	}
-
-	public void setScore(Score score) {
-		this.score = score;
-	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
