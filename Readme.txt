@@ -32,12 +32,14 @@ Following are some details about the classes.
 
 
 General Note about design
-1. In general have divided individual operations into individual packages, such that each class will have single responsibility and operates on corresponding model.
-2. Instead of creating singleton, I have created a session factory which deals with providing corresponding services.
-3. Have designed classes in such a way that it can be easily extended to add in new feature to expand the gameplay.
-3. Each package is divided into minimum 2 sub packages
+1. Its a maven project, and requires JAVA 8 to compile.
+2. In general have divided individual operations into individual packages, such that each class will have single responsibility and operates on corresponding model.
+3. Instead of creating singleton, I have created a session factory which deals with providing corresponding services.
+4. Have designed classes in such a way that it can be easily extended to add in new feature to expand the gameplay.
+5. Each package is divided into minimum 2 sub packages
 	- com.assignment.game.XXXX.Model which will have all entities.
 	- com.assignment.game.XXXX.Service which will have services, which operate on corresponding model.
-4. Classes are currently not thread safe as they currently operate only in sequential mode.
+6. Classes are currently not thread safe as they currently operate only in sequential mode.
 	
+7. There is scope for writing Test Cases for individual service classes, to test desired behaviour. (This is pending due to time constraint.)
 
